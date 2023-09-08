@@ -38,6 +38,13 @@ public class Move : MonoBehaviour
 {
     public float speed;
 
+    private Score score;
+
+    void Awake()
+    {
+        score = FindObjectOfType<Score>();
+    }
+
     void Update()
     {
         transform.Translate(Vector2.left * Time.deltaTime * speed);    
@@ -45,6 +52,7 @@ public class Move : MonoBehaviour
 
     void OnBecameInvisible()
     {
+        score.addscore();
         Destroy(gameObject);    
     }
 }
