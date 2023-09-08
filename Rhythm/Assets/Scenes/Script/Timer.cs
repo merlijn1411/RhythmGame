@@ -6,7 +6,7 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     public float Seconde = 120f;
-    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI timeText;
     public float end = 1f;
     public bool stop;
     public GameObject pauze;
@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
     {
 
         Seconde = Seconde - Time.deltaTime;
-        scoreText.text = Mathf.Floor(Seconde).ToString();
+        timeText.text = Mathf.Floor(Seconde).ToString();
 
         if (Seconde <= end)
         {
