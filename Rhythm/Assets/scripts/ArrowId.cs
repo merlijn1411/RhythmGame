@@ -35,6 +35,7 @@ public class ArrowId : MonoBehaviour
         if(other.tag == "Activator")
         {
             canBePressed = true;
+            
         }
     }
     private void OnTriggerExit2D(Collider2D other)
