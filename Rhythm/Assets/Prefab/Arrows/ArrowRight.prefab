@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 201733533, guid: 99113ddb405c8f44fb13e708f4a9732d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9622642, g: 0.7261836, b: 0.058098912, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,7 +101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBePressed: 0
   keyToPress: 275
-  SFXArrowSucceed: {fileID: 0}
 --- !u!58 &2243150468444392797
 CircleCollider2D:
   m_ObjectHideFlags: 0
